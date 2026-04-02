@@ -1,6 +1,13 @@
 import streamlit as st
 import psycopg2
 
+st.set_page_config(
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+with st.sidebar:
+    st.title("Navigation")
+
 st.set_page_config(page_title="Add Student", page_icon="👤")
 
 def get_connection():
