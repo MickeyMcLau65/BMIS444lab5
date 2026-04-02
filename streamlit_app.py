@@ -1,6 +1,11 @@
 import streamlit as st
 import psycopg2
 
+
+st.set_page_config(
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 st.set_page_config(page_title="Student Enrollment App", page_icon="🎓")
 
 def get_connection():
